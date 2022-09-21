@@ -9,7 +9,12 @@ Quirks:
 -lots of entries were missing reviews of any kind - no guests yet?
 
 Outliers:
--prices above 1000 daily, some as high as 25000
--ratings under 3.5, very very few are as low as 1 or 2. large majority between 4 and 5
+-prices above 2000 daily, some as high as 25000
+-ratings under 3, very very few are as low as 1 or 2. large majority between 4 and 5
 -the host not having a profile pic, out of a sample of around 17500 entires, only 50 didn't have profile pics
--having response rates lower than 0.8
+-having response rates lower than 0.5
+
+Regression:
+-Most predictive factors seem to be location (longitude, latitude), number of accomodations, number of bedrooms
+-I created a heatmap to see which variables had the strongest correlations with price - if the correlation was super minimal, I didn't include them in the regression
+-looks like location, number of bedrooms, and accomodations are the most important predictors
