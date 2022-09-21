@@ -1,0 +1,15 @@
+Data Processing Steps:
+-removed any NaN values from numerical columns
+-removed any null values from text columns
+-converted longitude and latitude into one coordinate for plotting purposes
+-made everything numerical (text fields turned into 1 if the listing had it and 0 if not, booleans turned to 0
+and 1, etc)
+
+Quirks:
+-lots of entries were missing reviews of any kind - no guests yet?
+
+Outliers:
+-prices above 1000 daily, some as high as 25000
+-ratings under 3.5, very very few are as low as 1 or 2. large majority between 4 and 5
+-the host not having a profile pic, out of a sample of around 17500 entires, only 50 didn't have profile pics
+-having response rates lower than 0.8
