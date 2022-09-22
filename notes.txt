@@ -4,6 +4,7 @@ Data Processing Steps:
 -converted longitude and latitude into one coordinate for plotting purposes
 -made everything numerical (text fields turned into 1 if the listing had it and 0 if not, booleans turned to 0
 and 1, etc)
+-converted percentages to decimals (80% -> 0.8)
 
 Quirks:
 -lots of entries were missing reviews of any kind - no guests yet?
@@ -17,4 +18,5 @@ Outliers:
 Regression:
 -Most predictive factors seem to be location (longitude, latitude), number of accomodations, number of bedrooms
 -I created a heatmap to see which variables had the strongest correlations with price - if the correlation was super minimal, I didn't include them in the regression
--looks like location, number of bedrooms, and accomodations are the most important predictors
+-if multiple predictors were correlated with each other (bedrooms, beds, and accommodates/ review metrics with each other), I just picked one to use
+-looks like accomodations, location, review scores are the most important predictors
